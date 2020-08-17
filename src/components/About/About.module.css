@@ -4,48 +4,46 @@
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)) !important;
     padding: 0 !important;
   }
-
-
-.About {
-  margin: 6rem 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
 }
+  @media only screen and (max-width: 1370px) {
+    .About {
+      flex-direction: column-reverse;
+    }
 
-@media only screen and (max-width: 1370px) {
+    .AboutMe {
+      width: 95% !important;
+    }
+
+    .AboutMeText {
+      padding: 0 !important;
+      margin: 0 auto;
+    }
+
+    .ContactMe {
+      width: 95% !important;
+    }
+
+    .ContactMeList {
+      flex-wrap: wrap;
+    }
+    .ContactMeItem {
+      width: 36rem !important;
+    }
+  }
+
   .About {
-    flex-direction: column-reverse;
+    margin: 6rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: row;
   }
-
-  .AboutMe {
-    width: 95% !important;
-  }
-
-  .AboutMeText {
-    padding: 0 !important;
-    margin: 0 auto;
-  }
-
-  .ContactMe {
-    width: 95% !important;
-  }
-
-  .ContactMeList {
-    flex-wrap: wrap;
-  }
-  .ContactMeItem {
-    width: 36rem !important;
-  }
-}
-
-
 
   .AboutMeSkills ul li {
     padding: 2rem;
   }
-}
+
 
 .AboutMeText {
   width: 90%;
