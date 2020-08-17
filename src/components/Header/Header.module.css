@@ -1,7 +1,6 @@
 .header {
   /* linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), */
-  background-image: 
-    url('../../assests/background-4.jpg');
+  background-image: url('../../assests/background-6.jpg');
   background-position: center;
   background-size: cover;
   height: 100vh;
@@ -10,14 +9,19 @@
   align-items: center;
   flex-direction: column;
   text-align: start;
+  position: relative;
+   background-attachment: fixed;
 }
 
 .heroHeaderContainer {
+  position: absolute;
+  left: 15%;
+
   padding: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   /* background-color: rgba(0, 0, 0, 0.8); */
 }
 
@@ -27,45 +31,45 @@
   font-size: 6rem;
   display: block;
   letter-spacing: 3px;
-  margin: 2rem 0;
+  margin: 0rem 0;
 }
 
 .headerHero span {
   color: var(--color-primary);
   font-weight: bold;
-
 }
 
-h2 {
+.header h2 {
   color: var(--font-color-primary);
   display: block;
   font-size: 3.5rem;
   letter-spacing: 2px;
-
 }
 
 .headerIcons {
-  padding: 2rem;
-  width: 23rem;
+  padding: 2rem 0;
+  width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 2rem 0;
+  margin: 2rem auto;
 }
 
 .headerIcons i {
   font-size: 4rem;
-  
-}
-
-.headerIcons i:first-child {
-  color: #E44D26;
+  margin-right: 1rem;
+  margin-left: auto;
 }
 
 .headerIcons i:nth-child(2) {
-  color: #F0DB4F;
+  color: #e44d26;
 }
 
 .headerIcons i:nth-child(3) {
-  color: #61DBFB;
+  color: #f0db4f;
 }
+
+.headerIcons i:nth-child(4) {
+  color: #61dbfb;
+}
+

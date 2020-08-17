@@ -1,0 +1,81 @@
+.Project {
+  background-color: var(--color-grey-primary);
+  /* box-shadow: 0px 5px 20px  rgba(0,0,0,.5); */
+  border-radius: 5px;
+}
+
+.ProjectImg {
+  width: 45rem;
+}
+
+.ProjectTitle {
+  font-size: 1.8rem;
+  margin: 1.5rem auto;
+}
+
+.ProjectDes {
+  font-size: 1.4rem;
+}
+
+.ProjectImg img {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.ProjectBtns {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 3rem auto;
+}
+
+.ProjectBtn {
+  position: relative;
+  text-decoration: none;
+  color: var(--font-color-primary);
+  font-size: 1.6rem;
+  padding: 1rem 3.5rem;
+  border: 1px solid white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.ProjectBtn i {
+  margin-right: 1rem;
+  z-index: 20;
+  transition: color .3s ease-in-out;
+}
+
+.ProjectBtn i:hover {
+  color: #000;
+}
+
+.ProjectBtn span {
+  position: relative;
+  z-index: 5;
+}
+
+.ProjectBtn:hover {
+  color: #000;
+}
+
+.ProjectBtn::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+  transform-origin: left;
+  z-index: 1;
+}
+
+.ProjectBtn:hover::before {
+  transform: scaleX(1);
+}
