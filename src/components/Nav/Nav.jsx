@@ -1,17 +1,60 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import classes from './Nav.module.css';
+import { Link } from 'react-scroll';
 
 const Nav = () => {
+  const [NavClass, setNavClass] = useState(classes.Nav);
+  let navClass = classes.Nav;
+
+  useEffect(() => {
+    document.addEventListener('scroll', () => {
+      if (window.scrollY > 0) {
+        setNavClass([classes.Nav,classes.Navsticky].join(' '));
+      } else {
+        setNavClass(classes.Nav)
+      }
+    });
+   
+  }, []);
+
+  const scroll = () => {
+    console.log(0);
+  };
+
   return (
-    <ul className={classes.Nav}>
+    <ul className={NavClass} onScroll={scroll}>
       <li className={classes.NavItem}>
-        <a href="" className={classes.NavLink}>Home</a>
+        <Link
+          className={classes.NavLink}
+          to="home"
+          smooth={true}
+          duration={500}
+          activeClass={classes.active}
+        >
+          Home
+        </Link>
       </li>
       <li className={classes.NavItem}>
-        <a href="" className={classes.NavLink}>Projects</a>
+        <Link
+          className={classes.NavLink}
+          to="projects"
+          smooth={true}
+          duration={600}
+          activeClass={classes.active}
+        >
+          Projects
+        </Link>
       </li>
       <li className={classes.NavItem}>
-        <a href="" className={classes.NavLink}>About</a>
+        <Link
+          className={classes.NavLink}
+          to="about"
+          smooth={true}
+          duration={600}
+          activeClass={classes.active}
+        >
+          About
+        </Link>
       </li>
     </ul>
   );
