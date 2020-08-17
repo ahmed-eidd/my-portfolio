@@ -40,6 +40,7 @@ const Nav = () => {
           to="projects"
           smooth={true}
           duration={600}
+          offset={-50}
           activeClass={classes.active}
         >
           Projects

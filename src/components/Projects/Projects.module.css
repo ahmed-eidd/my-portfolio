@@ -1,3 +1,12 @@
+
+@media only screen and (max-width: 800px)  {
+  .Projects {
+    width: 100% !important;
+  }
+
+  
+}
+
 .ProjectsContainer {
   margin: 5rem 0;
 }
@@ -5,10 +14,10 @@
 .Projects {
   margin-top: 3rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(60rem,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(46rem,1fr));
   justify-items: center;
   align-items: center;
-  width: 90%;
+  width: 70%;
   margin: 3rem auto;
   row-gap: 4rem;
 }

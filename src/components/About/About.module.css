@@ -1,18 +1,55 @@
+@media only screen and (max-width: 900px) {
+  .AboutMeSkills ul {
+    width: 37rem !important;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)) !important;
+    padding: 0 !important;
+  }
+
+
 .About {
   margin: 6rem 0;
   display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
   min-height: 100vh;
 }
 
-.AboutMe {
-  width: 65%;
+@media only screen and (max-width: 1370px) {
+  .About {
+    flex-direction: column-reverse;
+  }
+
+  .AboutMe {
+    width: 95% !important;
+  }
+
+  .AboutMeText {
+    padding: 0 !important;
+    margin: 0 auto;
+  }
+
+  .ContactMe {
+    width: 95% !important;
+  }
+
+  .ContactMeList {
+    flex-wrap: wrap;
+  }
+  .ContactMeItem {
+    width: 36rem !important;
+  }
+}
+
+
+
+  .AboutMeSkills ul li {
+    padding: 2rem;
+  }
 }
 
 .AboutMeText {
   width: 90%;
- 
+
   padding: 0 15rem;
   text-align: start;
 }
@@ -61,7 +98,6 @@
   justify-items: start;
   align-items: center;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-
 }
 
 .AboutMeSkills li {
@@ -91,7 +127,7 @@
   width: 100%;
   display: flex;
   justify-content: flex-start;
-  align-items:center;
+  align-items: center;
   font-size: 1.8rem;
   padding: 4rem;
 }

@@ -1,4 +1,4 @@
- /* Base Styling */
+/* Base Styling */
 :root {
   --color-primary: #726eff;
   --color-primary-dark: #3700b3;
@@ -11,8 +11,16 @@
   --font-primary: 'Open Sans', sans-serif;
   --font-secondary: 'Poppins', sans-serif;
   --font-color-primary: #dfe4ea;
-}
 
+  /* Media Queries */
+
+  --bp-largest: 75em; /* 1200px */
+  --bp-large: 68.75em; /* 1100px */
+  --bp-medium: 56.25em; /* 900px */
+  --bp-small: 37.5em; /* 600px */
+  --bp-smallest: 31.25em; /* 500px */
+  --bp-smallest-5s: 21.25em;
+}
 
 * {
   margin: 0;
@@ -27,13 +35,13 @@
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%;  /* 1rem = 10px, 10px/16px = 62.5% */
-
-  @media only screen and (max-width: 1200px) {
-    font-size: 50%;
+  font-size: 62.5%; /* 1rem = 10px, 10px/16px = 62.5% */
+}
+@media only screen and (max-width: 1200px) {
+  html {
+    font-size: 50% !important;
   }
 }
-
 body {
   color: var(--font-color-primary);
   font-family: var(--font-primary);
@@ -44,7 +52,6 @@ body {
 }
 
 /* #222427 */
-
 
 /* global Styling */
 
@@ -57,4 +64,3 @@ h3 {
   border-bottom: 1px solid var(--font-color-primary);
   padding: 1rem;
 }
-

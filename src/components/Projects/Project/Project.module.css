@@ -1,3 +1,13 @@
+@media only screen and (max-width: 800px) {
+  .ProjectImg {
+    width: 35rem !important;
+    height: 14rem !important;
+  }
+  .ProjectBtn {
+    padding: 1rem 1.5rem !important;
+  }
+}
+
 .Project {
   background-color: var(--color-grey-primary);
   /* box-shadow: 0px 5px 20px  rgba(0,0,0,.5); */
@@ -6,6 +16,7 @@
 
 .ProjectImg {
   width: 45rem;
+  height: 24rem;
 }
 
 .ProjectTitle {
@@ -46,7 +57,7 @@
 .ProjectBtn i {
   margin-right: 1rem;
   z-index: 20;
-  transition: color .3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
 
 .ProjectBtn i:hover {
