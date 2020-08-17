@@ -1,0 +1,105 @@
+.About {
+  margin: 6rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  min-height: 100vh;
+}
+
+.AboutMe {
+  width: 65%;
+}
+
+.AboutMeText {
+  width: 90%;
+ 
+  padding: 0 15rem;
+  text-align: start;
+}
+
+.AboutMeText h4 {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+.AboutMeText p {
+  font-size: 1.6rem;
+
+  text-align: start;
+  line-height: 2;
+}
+
+.AboutMeSkills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem auto;
+  width: 90%;
+}
+
+/* .AboutMeSkills h3 {
+  font-weight: normal;
+  font-family: var(--font-secondary);
+  font-size: 2rem;
+  letter-spacing: 1px;
+  display: inline;
+  border-bottom: 1px solid var(--font-color-primary);
+  padding: 1rem;
+} */
+
+.AboutMeSkills ul {
+  margin: 3rem auto;
+  width: 65%;
+  padding: 1rem 10rem;
+  list-style: none;
+  /* display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: flex-start; */
+  display: grid;
+  justify-items: start;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+
+}
+
+.AboutMeSkills li {
+  font-size: 1.8rem;
+  padding: 3rem;
+}
+
+.AboutMeSkills li i {
+  margin-right: 0.5rem;
+}
+
+.ContactMe {
+  width: 35%;
+}
+
+.ContactMeList {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  margin: 3rem auto;
+}
+
+.ContactMeItem {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items:center;
+  font-size: 1.8rem;
+  padding: 4rem;
+}
+
+.ContactMeItem a {
+  color: var(--font-color-primary);
+}
+
+.ContactMeItem i {
+  margin-right: 2rem;
+}
