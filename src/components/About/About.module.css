@@ -7,7 +7,7 @@
 }
   @media only screen and (max-width: 1370px) {
     .About {
-      flex-direction: column-reverse;
+      flex-direction: column-reverse !important;
     }
 
     .AboutMe {
