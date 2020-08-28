@@ -29,7 +29,7 @@ const Projects = () => {
       livedemo: 'https://5f39e899fded430b73946cdb--hearthstoneapp.netlify.app/',
     },
     {
-      title: 'Photographer Portofolio',
+      title: 'Photographer Portfolio',
       des: 'Html, Sass, Js',
       img: IMProject,
       github: 'https://github.com/ahmed-eidd/Ibrahim-Portfoliop',

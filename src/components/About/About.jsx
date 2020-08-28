@@ -8,7 +8,7 @@ const About = () => {
         <div className={classes.AboutMeText}>
           <h4>Hi! I'm Ahmed</h4>
           <p>
-            My name is Ahmed Eid a Front End Developer based in Cario,Egypt.
+            My name is Ahmed Eid a Front End Developer based in Cairo,Egypt.
             Like many other people, I enjoy spending my free time increasing my
             knowledge of Web Development and building new and challenging
             projects using React,Redux,Gatsby and many Front end Technologies
