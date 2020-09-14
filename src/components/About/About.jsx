@@ -48,7 +48,7 @@ const About = () => {
             <li className={classes.ContactMeItem}><i class="fas fa-envelope"></i><p>Ahmedeid.webdev@gmail.com</p></li>
             <li className={classes.ContactMeItem}> <i class="fab fa-github"></i>  <a target='_blank' href="https://github.com/ahmed-eidd">Github</a></li>
             <li className={classes.ContactMeItem}><i class="fab fa-linkedin"></i> <a target='_blank' href="https://www.linkedin.com/in/ahmed-eidd/">Linkedin</a></li>
-            <li className={classes.ContactMeItem}><i class="far fa-file-alt"></i><a target='_blank' href="https://drive.google.com/file/d/1FsdWi_A49Z8ijoxOSH2Eg1lRIucB0zFE/view?usp=sharing">Resume</a></li>
+            <li className={classes.ContactMeItem}><i class="far fa-file-alt"></i><a target='_blank' href="https://drive.google.com/file/d/1DE3H2Uvkx5ChfY_Ao1G_-fgKYv5Vixml/view?usp=sharing">Resume</a></li>
           </ul>
       
       </div>

@@ -10,7 +10,7 @@ import 'aos/dist/aos.css';
 const Projects = () => {
   useEffect(() => {
     Aos.init({
-      duration: 1800,
+      duration: 800,
     });
   }, []);
   const [projects, setProjects] = useState([
@@ -32,8 +32,8 @@ const Projects = () => {
       title: 'Photographer Portfolio',
       des: 'Html, Sass, Js',
       img: IMProject,
-      github: 'https://github.com/ahmed-eidd/Ibrahim-Portfoliop',
-      livedemo: 'https://heuristic-mayer-87f112.netlify.app//',
+      github: 'https://github.com/ahmed-eidd/Ibrahim-Portfolio',
+      livedemo: 'https://ibrahimmaddy.netlify.app/',
     },
   ]);
 
