@@ -4,6 +4,7 @@ import Project from './Project/Project';
 import MovieProject from '../../assests/Projects/movieBoxProd.png';
 import HSProject from '../../assests/Projects/background.jpg';
 import IMProject from '../../assests/Projects/ibrahim-porfolio.jpg';
+import UpstageProject from '../../assests/Projects/upstage-project.jpg';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
@@ -30,11 +31,18 @@ const Projects = () => {
     },
     {
       title: 'Photographer Portfolio',
-      des: 'Html, Sass, Js',
+      des: 'Html, Sass, Javascript',
       img: IMProject,
       github: 'https://github.com/ahmed-eidd/Ibrahim-Portfolio',
       livedemo: 'https://ibrahimmaddy.netlify.app/',
     },
+    {
+      title: 'Upstage Theater',
+      des: 'Html, Sass, Javascript',
+      img: UpstageProject,
+      github:'https://github.com/ahmed-eidd/Theater-Project',
+      livedemo: 'https://upstage.netlify.app/',
+    }
   ]);
 
   return (
