@@ -17,28 +17,28 @@ const Projects = () => {
   const [projects, setProjects] = useState([
     {
       title: 'Movie Box',
-      des: 'React, React Router, Redux',
+      des: 'Movie Box is a Movie app where you can search and find your favourite movies and add them to your wishlist, Built with React and Redux',
       img: MovieProject,
       github: 'https://github.com/ahmed-eidd/movie-app',
       livedemo: 'https://movieboxx.netlify.app/',
     },
     {
       title: 'Hearthstone App',
-      des: 'React, React Router',
+      des: 'Hearthstone app is a cards gallery for the card game Hearthstone with all classes cards, Built with React, React Router',
       img: HSProject,
       github: 'https://github.com/ahmed-eidd/Hearthstone-app',
       livedemo: 'https://5f39e899fded430b73946cdb--hearthstoneapp.netlify.app/',
     },
     {
       title: 'Photographer Portfolio',
-      des: 'Html, Sass, Javascript',
+      des: 'Photographer Portfolio for a Photographer called ibrahim showcasing some of his work, built with Html Sass Js',
       img: IMProject,
       github: 'https://github.com/ahmed-eidd/Ibrahim-Portfolio',
       livedemo: 'https://ibrahimmaddy.netlify.app/',
     },
     {
       title: 'Upstage Theater',
-      des: 'Html, Sass, Javascript',
+      des: 'Website for a Theater in Chicago called Upstage, Built with Html Sass and Js ' ,
       img: UpstageProject,
       github:'https://github.com/ahmed-eidd/Theater-Project',
       livedemo: 'https://upstage.netlify.app/',

@@ -1,4 +1,8 @@
 @media only screen and (max-width: 800px) {
+  .Project {
+    max-width: 35rem !important;
+  }
+  
   .ProjectImg {
     width: 35rem !important;
     height: 14rem !important;
@@ -12,6 +16,7 @@
   background-color: var(--color-grey-primary);
   /* box-shadow: 0px 5px 20px  rgba(0,0,0,.5); */
   border-radius: 5px;
+  max-width: 45rem;
 }
 
 .ProjectImg {
@@ -26,6 +31,8 @@
 
 .ProjectDes {
   font-size: 1.4rem;
+  padding: 2rem 3.5rem;
+  text-align: start;
 }
 
 .ProjectImg img {
