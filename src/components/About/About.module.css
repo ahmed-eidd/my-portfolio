@@ -7,7 +7,7 @@
 }
   @media only screen and (max-width: 1370px) {
     .About {
-      flex-direction: column-reverse !important;
+
     }
 
     .AboutMe {
@@ -17,6 +17,7 @@
     .AboutMeText {
       padding: 0 !important;
       margin: 0 auto;
+      width: 80% !important;
     }
 
     .ContactMe {
@@ -37,7 +38,7 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    flex-direction: row;
+    flex-direction: column;
   }
 
   .AboutMeSkills ul li {
@@ -46,10 +47,11 @@
 
 
 .AboutMeText {
-  width: 90%;
+  width: 50%;
+  margin: 3rem auto;
+  /* padding: 0 15rem; */
+  text-align: justify;
 
-  padding: 0 15rem;
-  text-align: start;
 }
 
 .AboutMeText h4 {
@@ -57,10 +59,14 @@
   margin-bottom: 3rem;
 }
 
+.AboutMeText h4 span {
+  color: var(--color-primary);
+}
+
 .AboutMeText p {
   font-size: 1.6rem;
 
-  text-align: start;
+  /* text-align: center; */
   line-height: 2;
 }
 
@@ -85,7 +91,7 @@
 
 .AboutMeSkills ul {
   margin: 3rem auto;
-  width: 65%;
+  width: 60%;
   padding: 1rem 10rem;
   list-style: none;
   /* display: flex;
@@ -99,7 +105,7 @@
 }
 
 .AboutMeSkills li {
-  font-size: 1.8rem;
+  font-size: 2.4rem;
   padding: 3rem;
 }
 
@@ -108,7 +114,8 @@
 }
 
 .ContactMe {
-  width: 35%;
+  /* width: 35%; */
+  margin: 3rem auto;
 }
 
 .ContactMeList {
