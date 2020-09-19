@@ -25,7 +25,6 @@
 .title {
   margin: 5rem 0;
   font-family: var(--font-secondary);
-  border-bottom: 1px solid var(--font-color-primary);
   display: inline-block;
   font-size: 2rem;
   font-weight: normal;

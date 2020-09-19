@@ -53,7 +53,7 @@ const Projects = () => {
       className={classes.ProjectsContainer}
       id="projects"
     >
-      <h2 className={classes.title}>My Projects</h2>
+      <h3 className={classes.title}>My Projects</h3>
       <div className={classes.Projects}>
         {projects.map((pro) => (
           <Project
