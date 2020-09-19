@@ -51,8 +51,8 @@ const Header = () => {
           </div>
         </div>
       </header>{' '}
-      <div className={classes.slider1} ref={ el => slid1 = el}></div>
-      <div className={classes.slider2} ref={ el => slid2 = el}>></div>
+      <div className={classes.slider1} ref={ el => slid1 = el}><h1>Welcome</h1></div>
+      <div className={classes.slider2} ref={ el => slid2 = el}></div>
     </React.Fragment>
   );
 };
