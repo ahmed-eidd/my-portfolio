@@ -1,20 +1,27 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
+import { TimelineLite, Power1, CSSPlugin } from 'gsap';
 import classes from './Nav.module.css';
 import { Link } from 'react-scroll';
+
+const C = CSSPlugin;
 
 const Nav = () => {
   const [NavClass, setNavClass] = useState(classes.Nav);
   let navClass = classes.Nav;
 
+  let navRef = useRef(null);
+  let tl = new TimelineLite();
+
   useEffect(() => {
     document.addEventListener('scroll', () => {
       if (window.scrollY > 0) {
-        setNavClass([classes.Nav,classes.Navsticky].join(' '));
+        setNavClass([classes.Nav, classes.Navsticky].join(' '));
       } else {
-        setNavClass(classes.Nav)
+        setNavClass(classes.Nav);
       }
     });
-   
+
+    tl.to(navRef, {duration: 1, css: {opacity: 1}})
   }, []);
 
   const scroll = () => {
@@ -22,7 +29,7 @@ const Nav = () => {
   };
 
   return (
-    <ul className={NavClass} onScroll={scroll}>
+    <ul className={NavClass} onScroll={scroll} ref={el => navRef = el}>
       <li className={classes.NavItem}>
         <Link
           className={classes.NavLink}
@@ -48,7 +55,7 @@ const Nav = () => {
       </li>
       <li className={classes.NavItem}>
         <Link
-        offset={-50}
+          offset={-50}
           className={classes.NavLink}
           to="about"
           smooth={true}

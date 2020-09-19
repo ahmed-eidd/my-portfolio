@@ -12,7 +12,7 @@
   align-items: center;
   list-style: none;
   z-index: 6;
-
+  opacity: 0;
   transition: all 0.3s ease-in-out;
   padding: 3rem 0;
 }
