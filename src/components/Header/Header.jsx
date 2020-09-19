@@ -16,9 +16,9 @@ const Header = () => {
       duration: 1800,
     });
 
-    tl.to(slid1, 1, {y:'-100%', ease:Power1.easeOUt})
-    tl.to(slid2, 1, {y: '-100%', ease: Power1.easeOut}, 0.3)
-    tl.to(header,0.5, {opacity: '1', ease: Power1.easeIn}, 1)
+    tl.to(slid1, 1,{ css:{y:'-100%', ease:Power1.easeOUt}})
+    tl.to(slid2, 1, { css:{y: '-100%', ease: Power1.easeOut}}, 0.3)
+    tl.to(header,0.5, {css:{opacity: '1', ease: Power1.easeIn}}, 1)
 
   }, []);
   return (
