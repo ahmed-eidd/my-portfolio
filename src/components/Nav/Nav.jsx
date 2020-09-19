@@ -48,6 +48,7 @@ const Nav = () => {
       </li>
       <li className={classes.NavItem}>
         <Link
+        offset={-50}
           className={classes.NavLink}
           to="about"
           smooth={true}
