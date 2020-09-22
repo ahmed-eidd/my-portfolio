@@ -60,7 +60,7 @@ const Header = () => {
           </h2>
           <div className={classes.headerIcons}>
             <Btn>
-              <Link to="about" smooth={true} duration={600}>
+              <Link to="about" smooth={true} duration={600} offset={400}>
                 Contact Me
               </Link>
             </Btn>
