@@ -65,7 +65,7 @@ const About = () => {
             <i class="far fa-file-alt"></i>
             <a
               target="_blank"
-              href="https://drive.google.com/file/d/1FgqB5RtutmHzYG1VYXbArig2YzY7q6WY/view?usp=sharing"
+              href="https://drive.google.com/file/d/1CFeaqmVZneyh2C_mQx4A0fjM-dRdxgkE/view?usp=sharing"
             >
               Resume
             </a>
