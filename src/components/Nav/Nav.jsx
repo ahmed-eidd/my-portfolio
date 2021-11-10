@@ -1,13 +1,10 @@
 import React, { useEffect, useState, useRef } from 'react';
-import { TimelineLite, Power1, CSSPlugin } from 'gsap';
+import { TimelineLite } from 'gsap';
 import classes from './Nav.module.css';
 import { Link } from 'react-scroll';
 
-const C = CSSPlugin;
-
 const Nav = () => {
   const [NavClass, setNavClass] = useState(classes.Nav);
-  let navClass = classes.Nav;
 
   let navRef = useRef(null);
   let tl = new TimelineLite();
@@ -21,19 +18,19 @@ const Nav = () => {
       }
     });
 
-    tl.to(navRef, {duration: 1, css: {opacity: 1}})
-  }, []);
+    tl.to(navRef, { duration: 1, css: { opacity: 1 } });
+  }, [tl]);
 
   const scroll = () => {
     console.log(0);
   };
 
   return (
-    <ul className={NavClass} onScroll={scroll} ref={el => navRef = el}>
+    <ul className={NavClass} onScroll={scroll} ref={(el) => (navRef = el)}>
       <li className={classes.NavItem}>
         <Link
           className={classes.NavLink}
-          to="home"
+          to='home'
           smooth={true}
           duration={500}
           activeClass={classes.active}
@@ -44,7 +41,7 @@ const Nav = () => {
       <li className={classes.NavItem}>
         <Link
           className={classes.NavLink}
-          to="projects"
+          to='projects'
           smooth={true}
           duration={600}
           offset={-50}
@@ -57,7 +54,7 @@ const Nav = () => {
         <Link
           offset={-50}
           className={classes.NavLink}
-          to="about"
+          to='about'
           smooth={true}
           duration={600}
           activeClass={classes.active}

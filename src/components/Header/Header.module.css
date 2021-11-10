@@ -15,8 +15,9 @@
   }
 }
 .header {
+  overflow: hidden;
   /* linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), */
-  background-image: url('../../assests/background-6-min.jpg');
+  /* background-image: url('../../assests/background-6-min.jpg'); */
   background-position: center;
   background-size: cover;
   height: 100vh;
@@ -32,6 +33,7 @@
 .heroHeaderContainer {
   position: absolute;
   left: 15%;
+  top: 10%;
   opacity: 0;
   padding: 5rem;
   display: flex;
@@ -44,21 +46,25 @@
 .headerHero {
   color: var(--font-color-primary);
   font-weight: bold;
-  font-size: 6rem;
+  font-size: 4rem;
   display: block;
   letter-spacing: 3px;
   margin: 0rem 0;
 }
 
-.headerHero span {
+.purple {
   color: var(--color-primary);
+  font-weight: bold;
+}
+.green {
+  color: var(--color-secondary);
   font-weight: bold;
 }
 
 .header h2 {
   color: var(--font-color-primary);
   display: block;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   letter-spacing: 2px;
 }
 
@@ -114,5 +120,13 @@
 .slider1 h1 {
   font-size: 8rem;
   color: white;
+}
 
+.MoonSvg {
+  height: 10rem;
+  width: auto;
+  position: fixed;
+  top: 10%;
+  right: 20%;
+  z-index: -1;
 }

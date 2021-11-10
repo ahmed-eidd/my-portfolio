@@ -14,7 +14,7 @@ const Projects = () => {
       duration: 800,
     });
   }, []);
-  const [projects, setProjects] = useState([
+  const [projects] = useState([
     {
       title: 'Movie Box',
       des: 'Movie Box is a Movie app where you can search and find your favourite movies and add them to your wishlist, Built with React and Redux',
@@ -38,20 +38,20 @@ const Projects = () => {
     },
     {
       title: 'Upstage Theater',
-      des: 'Website for a Theater in Chicago called Upstage, Built with Html Sass and Js ' ,
+      des: 'Website for a Theater in Chicago called Upstage, Built with Html Sass and Js ',
       img: UpstageProject,
-      github:'https://github.com/ahmed-eidd/Theater-Project',
+      github: 'https://github.com/ahmed-eidd/Theater-Project',
       livedemo: 'https://upstage.netlify.app/',
-    }
+    },
   ]);
 
   return (
     <div
-      data-aos="fade-up"
-      data-aos-once="true"
-      data-aos-easing="ease-in-out"
+      data-aos='fade-up'
+      data-aos-once='true'
+      data-aos-easing='ease-in-out'
       className={classes.ProjectsContainer}
-      id="projects"
+      id='projects'
     >
       <h3 className={classes.title}>My Projects</h3>
       <div className={classes.Projects}>
@@ -62,6 +62,7 @@ const Projects = () => {
             img={pro.img}
             github={pro.github}
             liveDemo={pro.livedemo}
+            key={pro.title}
           />
         ))}
       </div>

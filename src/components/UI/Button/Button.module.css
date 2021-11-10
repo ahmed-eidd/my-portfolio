@@ -1,4 +1,4 @@
-.Btn {
+/* .Btn {
   text-decoration: none;
   color: var(--font-color-primary);
   font-size: 1.8rem;
@@ -34,4 +34,41 @@
 
 .Btn:hover::before {
   transform: scaleX(1);
+} */
+.Btn {
+  text-decoration: none;
+  color: var(--font-color-primary);
+  background: linear-gradient(
+    150deg,
+    var(--color-primary) 0%,
+    var(--color-secondary) 51%,
+    var(--color-primary) 100%
+  );
+  font-size: 1.8rem;
+  background-size: 300% auto;
+  box-shadow: 0px 5px 50px rgba(71, 184, 255, 0.75),
+    0px 10px 10px -4px rgba(58, 125, 233, 0.360113),
+    inset 4px 4px 8px rgba(175, 230, 255, 0.521689),
+    inset -4px -4px 8px rgba(19, 95, 216, 0.356998);
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+
+  border-radius: 4px;
+
+  cursor: pointer;
+  border: none;
+  transition: all 0.4s ease-in-out;
+  padding: 1rem 3.5rem;
+}
+
+.Btn i {
+  margin-right: 1rem;
+  z-index: 20;
+}
+
+.Btn:hover {
+  background-position: 100% 0;
+  box-shadow: 0px 0px 20px rgba(71, 184, 255, 0.5),
+    0px 5px 5px -1px rgba(58, 125, 233, 0.245848),
+    inset 4px 4px 8px rgba(175, 230, 255, 0.521689),
+    inset -4px -4px 8px rgba(19, 95, 216, 0.356998);
 }
