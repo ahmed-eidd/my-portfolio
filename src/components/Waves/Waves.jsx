@@ -4,19 +4,15 @@ import './svgStyle.css';
 import KUTE from 'kute.js';
 
 const Waves = () => {
-  const animate = (first, second, third, fourth) => {
+  const animate = (first, second) => {
     return KUTE.fromTo(
       first,
       { path: first },
       { path: second },
-      // { path: third },
-      // { path: fourth },
       { repeat: 999, duration: 1500, yoyo: true }
     ).start();
   };
   useEffect(() => {
-    // animate('#wave1', '#wave1-');
-    // animate('#wave1', '#wave1--');
     animate('#wave2', '#wave2-');
     animate('#wave2', '#wave2--');
     animate('#wave2', '#wave2---');
@@ -32,13 +28,12 @@ const Waves = () => {
       <svg
         id='visual'
         viewBox='0 0 900 600'
-        // width='900'
-        // height='600'
         xmlns='http://www.w3.org/2000/svg'
-        // xmlns:xlink='http://www.w3.org/1999/xlink'
         version='1.1'
       >
+
         {/* wave 1 animation */}
+
         <path
           id='wave1'
           d='M0 353L21.5 365.2C43 377.3 86 401.7 128.8 404.5C171.7 407.3 214.3 388.7 257.2 384.8C300 381 343 392 385.8 400.3C428.7 408.7 471.3 414.3 514.2 420C557 425.7 600 431.3 642.8 425.3C685.7 419.3 728.3 401.7 771.2 392C814 382.3 857 380.7 878.5 379.8L900 379L900 601L878.5 601C857 601 814 601 771.2 601C728.3 601 685.7 601 642.8 601C600 601 557 601 514.2 601C471.3 601 428.7 601 385.8 601C343 601 300 601 257.2 601C214.3 601 171.7 601 128.8 601C86 601 43 601 21.5 601L0 601Z'
